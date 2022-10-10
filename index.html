@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>Ljcbaby is here.</title>
     <link rel="icon" type="image/jpeg" href="https://cravatar.cn/avatar/e7033b1012a3e7c07044b31686c57523">
+    <link rel="stylesheet" href="/css/normalize.css">
 </head>
 
 <body>
@@ -42,7 +43,17 @@
     </table>
     <br />
     <p><a href="target.html">个人项目计划</a></p>
-    <audio src="https://cdn.ljcbaby.top/pic/2.aac" controls="controls">
+    <audio src="https://cdn.ljcbaby.top/pic/2.aac" controls="controls"></audio>
+    <form name="formTest" action="save.php" method="post" enctype="multipart/form-data">
+        <textarea name="textareaTest" cols="20" rows="10">想要留下什么吗？</textarea>
+    </form>
+    <input type="button" value="提交" onclick="iknow('textarea')">
+    <script type="text/javascript">
+        function iknow(sType) {
+            var f = document.forms[0];
+            alert(f.textareaTest.value);
+        }
+    </script>
 </body>
 
 </html>
