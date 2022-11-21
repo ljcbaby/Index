@@ -1,61 +1,154 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="zh-CN">
 
 <head>
-    <meta charset="utf-8">
-    <title>Ljcbaby is here.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)">
+    <link rel="preload" href="/css/custom.css" as="style">
+    <link rel="preload" href="/css/normalize.css" as="style">
+    <link rel="preconnect" href="https://cdn.ljcbaby.top" crossorigin>
+    <link rel="preconnect" href="https://cdn.ljcbaby.top" crossorigin>
     <link rel="icon" type="image/jpeg" href="https://cravatar.cn/avatar/e7033b1012a3e7c07044b31686c57523">
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="https://npm.elemecdn.com/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"
+        integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://npm.elemecdn.com/pace-js@1.2.4/themes/green/pace-theme-minimal.css">
+    <script src="https://npm.elemecdn.com/pace-js@1.2.4/pace.min.js"
+        integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+    <meta name="description" content="Ljcbaby 的个人主页">
+    <meta property="og:type" content="homepage">
+    <meta property="og:title" content="Ljcbaby is here.">
+    <meta property="og:url" content="https://ljcbaby.top/">
+    <meta property="og:site_name" content="Ljcbaby is here.">
+    <meta property="og:description" content="Ljcbaby 的个人主页">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:author" content="Ljcbaby">
+    <meta property="article:tag" content="个人,主页,Ljcbaby">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://ljcbaby.top/">
+    <title>Ljcbaby is here.</title>
 </head>
 
-<body>
-    <h1>这里是 Ljcbaby 的个人主页</h1>
-    <img src="https://cravatar.cn/avatar/e7033b1012a3e7c07044b31686c57523" alt="Ljcbaby">
-    <br />
-    <a href="https://blog.ljcbaby.top">个人博客</a>
-    <br />
-    <br />
-    <table>
-        <tr>
-            <td>博客文章</td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://blog.ljcbaby.top/article/friends/">friends</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://blog.ljcbaby.top/article/Mind-in-March/">Mind-in-March</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://blog.ljcbaby.top/article/Hexo/">Hexo</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="list.html">更多</a>
-            </td>
-        </tr>
-    </table>
-    <br />
-    <p><a href="target.html">个人项目计划</a></p>
-    <audio src="https://cdn.ljcbaby.top/pic/2.aac" controls="controls"></audio>
-    <form name="formTest" action="save.php" method="post" enctype="multipart/form-data">
-        <textarea name="textareaTest" cols="20" rows="10">想要留下什么吗？</textarea>
-    </form>
-    <input type="button" value="提交" onclick="iknow('textarea')">
-    <script type="text/javascript">
-        function iknow(sType) {
-            var f = document.forms[0];
-            alert(f.textareaTest.value);
-        }
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+    <main class="main">
+        <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+            <div class="header-inner">
+                <div class="site-brand-container">
+                    <div class="site-meta">
+                        <a href="/" class="brand" rel="start">
+                            <h1 class="site-title">Ljcbaby 的 个人主页</h1>
+                        </a>
+                        <p class="site-subtitle" itemprop="description">取一小片地，书写自己想要的故事。</p>
+                    </div>
+                </div>
+                <nav class="site-nav">
+                    <ul class="main-menu menu">
+                        <li class="links-of-author-item">
+                            <a href="https://blog.ljcbaby.top/" title="Blog → https:&#x2F;&#x2F;blog.ljcbaby.top&#x2F;"
+                                rel="noopener" target="_blank"><i class="fa fa-rss fa-fw"></i>Blog</a>
+                        </li>
+                        <li class="links-of-author-item">
+                            <a href="https://github.com/ljcbaby"
+                                title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ljcbaby" rel="noopener"
+                                target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+                        </li>
+                        <li class="links-of-author-item">
+                            <a href="https://space.bilibili.com/64220747"
+                                title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;64220747" rel="noopener"
+                                target="_blank"><i class="fa-custom bilibili fa-fw"></i>Bilibili</a>
+                        </li>
+                        <li class="links-of-author-item">
+                            <a href="https://twitter.com/ljcbabylove"
+                                title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;ljcbabylove" rel="noopener"
+                                target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="reading-progress-bar"></div>
+        <div class="main-inner">
+            <div class="main-column">
+                <div class="main-introduction">
+                    <h2 class="main-introduction-head">自我介绍</h2>
+                    <div class="main-introduction-inner">
+                        <div class="main-introduction-avatar">
+                            <img src="https://cravatar.cn/avatar/e7033b1012a3e7c07044b31686c57523" alt="Ljcbaby">
+                        </div>
+                        <div class="main-introduction-content">
+                            <h1 class="main-introduction-title">Ljcbaby</h1>
+                            <p class="main-introduction-description">取一小片地，书写自己想要的故事。</p>
+                            <div class="main-introduction-social">
+                                <a href="https://blog.ljcbaby.top/"
+                                    title="Blog → https:&#x2F;&#x2F;blog.ljcbaby.top&#x2F;" rel="noopener"
+                                    target="_blank"><i class="fa fa-rss fa-fw"></i></a>
+                            </div>
+                            <p><a href="target.html">个人项目计划</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-github">
+                    <h2 class="main-github-head">GitHub</h2>
+                    <div class="main-github-inner">拉取github公开仓库 ToDo</div>
+                </div>
+            </div>
+            <div class="main-column">
+                <div class="main-blog">
+                    <h2 class="main-blog-head">Blog</h2>
+                    <div class="main-blog-inner">
+                        <div class="main-blog-item">
+                            <div class="main-blog-item-inner">
+                                <div class="main-blog-item-header">
+                                    <h3 class="main-blog-item-title">
+                                        <a href="https://blog.ljcbaby.top/2021/01/01/2021-01-01-Hello-World/"
+                                            title="Hello World!">Hello World!</a>
+                                    </h3>
+                                    <div class="main-blog-item-meta">
+                                        <time datetime="2021-01-01T00:00:00.000Z"
+                                            itemprop="datePublished">2021-01-01</time>
+                                    </div>
+                                </div>
+                                <div class="main-blog-item-content">
+                                    <p>这是我的第一篇博客，也是我的个人主页。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-bilibili">
+                    <h2 class="main-bilibili-head">Bilibili 支持</h2>
+                    <div class="main-bilibili-inner">拉取B站收藏夹 ToDo</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">浙ICP备20008309号-1 </a>
+                <img src="https://cdn.ljcbaby.top/pic/beian.png" alt=""><a
+                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33072302100189" rel="noopener"
+                    target="_blank">浙公网安备 33072302100189号 </a>
+            </div>
+            <div class="copyright">
+                &copy; 2022 –
+                <span itemprop="copyrightYear">2022</span>
+                <span class="with-love">
+                    <i class="fa fa-heart"></i>
+                </span>
+                <span class="author" itemprop="copyrightHolder">Ljcbaby</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://npm.elemecdn.com/@next-theme/pjax@0.5.0/pjax.min.js"
+        integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+    <script>Pace.options.restartOnPushState = false;
+        document.addEventListener('pjax:send', () => {
+            Pace.restart();
+        });
     </script>
-    <!-- 备案 -->
-    <p><a href="https://beian.miit.gov.cn/">浙ICP备20008309号-1</a></p>
 </body>
 
 </html>
