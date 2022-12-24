@@ -265,9 +265,13 @@ header.header {
 }
 
 .main-github-item p {
-    margin: 1;
+    margin: 3px;
 }
 
-.main-blog-item-content p {
-    margin: 3;
+.main-blog p {
+    margin: 5px;
+}
+
+.main-blog h3 {
+    margin: 5px 0 5px;
 }
