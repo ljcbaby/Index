@@ -10,7 +10,8 @@ async function getRepos() {
 function showRepos(repos) {
     const reposList = document.getElementsByClassName('main-github-inner')[0];
     innerHTML = '';
-    repos.forEach(repo => {
+    count = 0;
+    for (const repo of repos) {
         innerHTML += `<div class="main-github-item">`;
         innerHTML += `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
         if (repo.description) {
@@ -19,7 +20,11 @@ function showRepos(repos) {
             innerHTML += `<p>暂无描述</p>`;
         }
         innerHTML += `</div>`;
-    });
+        count++;
+        if (count >= 7) {
+            break;
+        }
+    }
     reposList.innerHTML = innerHTML;
 }
 

@@ -199,19 +199,19 @@ header.header {
 }
 
 .main-introduction {
-    flex-grow: 2;
+    flex: 2 1 0;
 }
 
 .main-github {
-    flex-grow: 1;
+    flex: 1 1 0;
 }
 
 .main-blog {
-    flex-grow: 2;
+    flex: 2 1 0;
 }
 
 .main-bilibili {
-    flex-grow: 1;
+    flex: 1 1 0;
 }
 
 .toggle {
@@ -262,4 +262,12 @@ header.header {
     width: var(--progress);
     left: 0;
     bottom: 0;
+}
+
+.main-github-item p {
+    margin: 1;
+}
+
+.main-blog-item-content p {
+    margin: 3;
 }
