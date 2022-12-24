@@ -196,10 +196,15 @@ header.header {
     flex-basis: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .main-introduction {
     flex: 2 1 0;
+}
+
+.main-pending {
+    flex: 0 0 20px;
 }
 
 .main-github {
@@ -264,6 +269,10 @@ header.header {
     bottom: 0;
 }
 
+.main-github-item {
+    min-width: 200px;
+}
+
 .main-github-item p {
     margin: 3px;
 }
@@ -273,5 +282,38 @@ header.header {
 }
 
 .main-blog h3 {
-    margin: 5px 0 5px;
+    margin: 10px 0 5px;
+}
+
+.main-bilibili-inner {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-bilibili-item {
+    max-width: 325px;
+    min-width: 200px;
+}
+
+.main-bilibili-item img {
+    width: 100%;
+    margin: 5px 0 0;
+}
+
+.main-bilibili-item p {
+    margin: 3px;
+}
+
+.main-bilibili-item h3 {
+    margin: 3px 0 3px;
+}
+
+@media (max-width: 768px) {
+    .main {
+        display: block;
+        width: auto;
+        margin: 0 20px;
+    }
 }

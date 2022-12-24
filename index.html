@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="/css/custom.css">
     <link rel="stylesheet" href="https://npm.elemecdn.com/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"
         integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://npm.elemecdn.com/pace-js@1.2.4/themes/green/pace-theme-minimal.css">
-    <script src="https://npm.elemecdn.com/pace-js@1.2.4/pace.min.js"
-        integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
     <meta name="description" content="Ljcbaby 的个人主页">
     <meta property="og:type" content="homepage">
     <meta property="og:title" content="Ljcbaby is here.">
@@ -32,7 +29,7 @@
     <title>Ljcbaby is here.</title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+<body itemscope itemtype="http://schema.org/WebPage">
     <main class="main">
         <header class="header" itemscope itemtype="http://schema.org/WPHeader">
             <div class="header-inner">
@@ -69,7 +66,6 @@
                 </nav>
             </div>
         </header>
-        <div class="reading-progress-bar"></div>
         <div class="main-inner">
             <div class="main-column">
                 <div class="main-introduction">
@@ -90,6 +86,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="main-pending"></div>
                 <div class="main-github">
                     <h2 class="main-github-head">GitHub</h2>
                     <div class="main-github-inner">拉取github公开仓库ing 如果长时间加载不出，请检查与 api.github.com 的连接。</div>
@@ -108,6 +105,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="main-pending"></div>
                 <div class="main-bilibili">
                     <h2 class="main-bilibili-head">Bilibili 支持</h2>
                     <div class="main-bilibili-inner">
@@ -160,18 +158,10 @@
             </div>
         </div>
     </footer>
-    <script src="js/bilibili.js"></script>
-    <script src="https://npm.elemecdn.com/@next-theme/pjax@0.5.0/pjax.min.js"
-        integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
     <script src="/js/github.js"></script>
     <script src="/js/bilibili.js"></script>
     <script src="/js/blog-rss.js"></script>
     <script src="/js/boards.js"></script>
-    <script>Pace.options.restartOnPushState = false;
-        document.addEventListener('pjax:send', () => {
-            Pace.restart();
-        });
-    </script>
 </body>
 
 </html>

@@ -26,7 +26,7 @@ async function Rss() {
         innerHTML += `</div>`;
         innerHTML += `</div>`;
         count++;
-        if (count >= 5) {
+        if (count >= 10) {
             break;
         }
     }

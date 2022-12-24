@@ -13,13 +13,15 @@ function showBilibili(data) {
   data['data']['medias'].forEach(el => {
     innerHTML += `<div class="main-bilibili-item">`;
     innerHTML += `<a href="https://www.bilibili.com/video/${el.bv_id}" target="_blank">`;
-    innerHTML += `<img src="${el.cover}" alt="${el.title}">`;
+    innerHTML += `<img src="${el.cover}" alt="${el.title}" referrerpolicy="no-referrer">`;
+    innerHTML += `<h3 class="main-bilibili-item-title">${el.title}</h3>`;
     innerHTML += `</a>`;
-    innerHTML += `<h3 class="main-bilibili-item-title">`;
-    innerHTML += `<a href="https://www.bilibili.com/video/${el.bv_id}" target="_blank">${el.title}</a>`;
-    innerHTML += `</h3>`;
     if (el.intro) {
-      innerHTML += `<p>${String(el.intro).slice(0,20)}......</p>`;
+        if (el.intro.length > 55) {
+            innerHTML += `<p>${String(el.intro).slice(0,55)}......</p>`;
+        } else {
+            innerHTML += `<p>${el.intro}</p>`;
+        }
     } else {
       innerHTML += `<p>暂无描述</p>`;
     }
