@@ -219,6 +219,23 @@ header.header {
     flex: 1 1 0;
 }
 
+.main-message-board-inner {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-message-board-item {
+    min-width: 300px;
+    flex: 1 1 0;
+    margin: 20px 0;
+}
+
+.main-message-board-form {
+    margin: 10px 0;
+}
+
 .toggle {
     line-height: 0;
 }

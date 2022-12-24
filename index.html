@@ -116,26 +116,26 @@
                 </div>
             </div>
             <div class="main-column">
-                <div class="main-boards">
-                    <h2 class="main-boards-head">留言板</h2>
-                    <div class="main-boards-inner">
-                        <div class="main-boards-item">
-                            <div class="main-boards-item-inner">
-                                <div class="main-boards-item-header">
-                                    <h3 class="main-boards-item-title">
-                                        <a href="https://blog.ljcbaby.top/2021/01/01/2021-01-01-Hello-World/"
-                                            title="Hello World!">Hello World!</a>
-                                    </h3>
-                                    <div class="main-boards-item-meta">
-                                        <time datetime="2021-01-01T00:00:00.000Z"
-                                            itemprop="datePublished">2021-01-01</time>
-                                    </div>
-                                </div>
-                                <div class="main-boards-item-content">
-                                    <p>这是我的第一篇博客，也是我的个人主页。</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="main-message-board">
+                    <h2 class="main-message-board-head">留言板</h2>
+                    <div class="main-message-board-inner"></div>
+                    <div class="main-message-board-form">
+                        <form id="message-form">
+                            <label for="nick">昵称:</label><br>
+                            <input type="text" id="nick" name="nick"><br>
+                            <label for="email">邮箱:</label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <label for="type">类型:</label><br>
+                            <select id="type" name="type">
+                              <option value="留言">留言</option>
+                              <option value="建议">建议</option>
+                              <option value="反馈">反馈</option>
+                            </select><br>
+                            <label for="message">信息:</label><br>
+                            <textarea id="message" name="message"></textarea><br>
+                            <button type="submit">提交</button>
+                            <button type="button" id="clear-button">清空所有留言</button>
+                          </form>
                     </div>
                 </div>
             </div>  
@@ -161,7 +161,7 @@
     <script src="/js/github.js"></script>
     <script src="/js/bilibili.js"></script>
     <script src="/js/blog-rss.js"></script>
-    <script src="/js/boards.js"></script>
+    <script src="/js/board.js"></script>
 </body>
 
 </html>
